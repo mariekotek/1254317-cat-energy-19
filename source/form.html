@@ -33,23 +33,26 @@
         <h1 class="cat-program__title">Подбор программы</h1>
         <div class="cat-program__text">Заполните анкету и мы подберем программу питания для вашего кота</div>
         <form class="cat-program__form program-form" action="" method="">
-          <p class="program-form__text"><label for="">Имя:*<input type="text" name="" id="" value="Барсик"></label></p>
-          <p class="program-form__number"><label for="">Вес (кг):*<input type="text" name="" id="" value="7"></label></p>
-          <p class="program-form__number"><label for="">Возраст (лет):<input type="text" name="" id="" value="7"></label></p>
-          <p class="program-form__radio"><label for="">Похудение<input type="radio" name="" id="" checked=""></label></p>
-          <p class="program-form__radio"><label for="">Набор массы<input type="radio" name="" id=""></label></p>
-          <p class="program-form__radio"><label for="">Не знаю (Нужен ваш совет)<input type="radio" name="" id=""></label></p>
-          <h2>Контактные данные(владельца кота)</h2>
-          <p class="program-form__email"><label for="">E-mail:*<input type="email" name="" id="" value="kuklachev@gmail.com"></label></p>
-          <p class="program-form_tel"><label for="">Телефон:*<input type="tel" name="" id="" value="8 (960) 900-60-90"></label></p>
+          <p><label for="">Имя:*<input type="text" class="program-form__name" name="" id="" value="Барсик"></label></p>
+          <p><label for="">Вес (кг):*<input type="text" class="program-form__number" name="" id="" value="7"></label></p>
+          <p><label for="">Возраст (лет):<input type="text" class="program-form__number" name="" id="" value="7"></label></p>
+          <p><label for=""><input type="radio" class="program-form__radio" name="" id="" checked="">Похудение</label></p>
+          <p><label for=""><input type="radio" class="program-form__radio" name="" id="">Набор массы</label></p>
+          <p><label for=""><input type="radio" class="program-form__radio" name="" id="">Не знаю (Нужен ваш совет)</label></p>
+          <h2 class="program-form__title">Контактные данные (владельца кота)</h2>
+          <span class="program-form__title-line"></span>
+          <p><label for="">E-mail:*<input type="email" class="program-form__email" name="" id="" value="kuklachev@gmail.com"></label></p>
+          <p><label for="">Телефон:*<input type="tel" class="program-form__tel" name="" id="" value="8 (960) 900-60-90"></label></p>
           <h2 class="program-form__title">Комментарий</h2>
-          <p class="program-form__text"><input type="text" name="" id="" value="Расскажите обо всех повадках кота"></p>
+          <span class="program-form__title-line"></span>
+          <p><input type="text" class="program-form__text" name="" id="" value="Расскажите обо всех повадках кота"></p>
           <h2 class="program-form__title">Дополнительно</h2>
-          <p class="program-form__checkbox"><label for="">Сахарозаменитель<input type="checkbox" name="" id="" checked=""></label></p>
-          <p class="program-form__checkbox"><label for="">Питьевая вода<input type="checkbox" name="" id=""></label></p>
-          <p class="program-form__checkbox"><label for="">Молоко<input type="checkbox" name="" id=""></label></p>
-          <p class="program-form__checkbox"><label for="">Витамины<input type="checkbox" name="" id=""></label></p>
-          <input type="submit" name="" value="Отправить заявку">
+          <span class="program-form__title-line"></span>
+          <p><label for=""><input type="checkbox" class="program-form__checkbox" name="" id="" checked="">Сахарозаменитель</label></p>
+          <p><label for=""><input type="checkbox" class="program-form__checkbox" name="" id="">Питьевая вода</label></p>
+          <p><label for=""><input type="checkbox" class="program-form__checkbox" name="" id="">Молоко</label></p>
+          <p><label for=""><input type="checkbox" class="program-form__checkbox" name="" id="">Витамины</label></p>
+          <input class="program-form__button" type="submit" name="" value="Отправить заявку">
           <p class="program-form__necessary">* — Обязательные поля</p>
         </form>
       </section>
