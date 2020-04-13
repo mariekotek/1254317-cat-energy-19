@@ -36,6 +36,6 @@
     "source/less/**/*.less"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "12.16.1"
   }
 }
