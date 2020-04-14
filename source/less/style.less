@@ -6,6 +6,7 @@
 }
 
 @import "mixins.less";
+@import "variables.less";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/site-list.less";
@@ -15,6 +16,7 @@
 @import "blocks/points-list.less";
 @import "blocks/point.less";
 @import "blocks/product-features.less";
+@import "blocks/features.less";
 @import "blocks/example.less";
 @import "blocks/example-num.less";
 @import "blocks/example-description.less";
@@ -35,10 +37,17 @@
 @import "blocks/program-form.less";
 
 body {
-  width: 320px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
