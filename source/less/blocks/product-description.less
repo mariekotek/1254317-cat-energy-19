@@ -1,10 +1,28 @@
 .product-description {
   .font-basic;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: #ffffff;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 20px 165px, 0 0;
   min-width: 320px;
   min-height: 440px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50px 160px;
+    min-height: 764px;
+  }
+
+  @media (min-width: 900px) {
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 200px, 100% 30px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
 
 .product-description__title {
@@ -16,7 +34,26 @@
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  width: 245px;
+
+  @media (min-width: 700px) {
+    font-size: 60px;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+    width: 450px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 60px;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+    width: 450px;
+  }
 }
 
 .product-description__text {
@@ -28,7 +65,25 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  width: 210px;
+  min-width: 210px;
+
+  @media (min-width: 700px) {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+  }
 }
 
 .product-description__button {
