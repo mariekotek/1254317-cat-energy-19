@@ -1,10 +1,41 @@
-.page-header__wrapper {
+.page-header__logo-button {
   .font-basic;
   display: flex;
   flex-direction: row;
+
+  height: 65px;
 }
 
 .page-header__toggle {
   border: none;
   outline: none;
+}
+
+.page-header__wrapper {
+  min-height: 260px;
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    min-height: 120px;
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 900px) {
+    min-height: 130px;
+    width: 1200px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    flex-direction: row;
+  }
 }

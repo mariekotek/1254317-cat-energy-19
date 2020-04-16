@@ -1,4 +1,13 @@
 .features {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 900px) {
+    flex-wrap: nowrap;
+  }
 }

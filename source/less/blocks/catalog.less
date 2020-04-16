@@ -1,4 +1,8 @@
 .catalog {
   .flex-column;
-  width: 320px;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
