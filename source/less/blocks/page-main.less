@@ -2,6 +2,15 @@
   .font-basic;
 }
 
+.page-main__extra-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
+}
+
 .page-main__title {
   font-size: 36px;
   font-weight: normal;

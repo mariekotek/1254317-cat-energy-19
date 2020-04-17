@@ -23,6 +23,15 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
+  width: 266px;
+
+  @media (min-width: 700px) {
+    width: 674px;
+  }
+
+  @media (min-width: 900px) {
+    width: 430px;
+  }
 }
 
 .example__cost {
@@ -47,4 +56,29 @@
   letter-spacing: normal;
   text-align: left;
   color: #111111;
+}
+
+.example__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__flex-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__img {
+  @media (min-width: 700px) {
+    height: 499px;
+    width: 690px;
+  }
+}
+
+.example__range {
+  width: 84px;
+
+  @media (min-width: 700px) {
+    width: 428px;
+  }
 }
