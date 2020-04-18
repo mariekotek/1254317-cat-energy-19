@@ -103,3 +103,42 @@ input {
   .font-button;
   .green-button;
 }
+
+/*Сетки*/
+
+.program-form__main {
+  .flex-column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.program-form__basic {
+  .flex-column;
+}
+
+.program-form__contact {
+  .flex-column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.program-form__extra {
+  .flex-column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.program-form__send {
+  .flex-column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}

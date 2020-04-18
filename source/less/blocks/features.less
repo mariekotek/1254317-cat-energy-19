@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
+  }
+}
+
+.features__item {
+  @media (min-width: @tablet-width) {
+    width: 245px;
   }
 }
