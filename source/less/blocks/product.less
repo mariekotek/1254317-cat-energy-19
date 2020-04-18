@@ -4,13 +4,13 @@
   flex-wrap: wrap;
   width: 320px;
 
-  @media (min-width: 700px) {
+  @media (min-width: @tablet-width) {
     width: 324px;
     height: 431px;
     margin: auto;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: @desktop-width) {
     width: 245px;
     height: 431px;
   }
@@ -33,7 +33,7 @@
 }
 
 .product__img {
-  @media (min-width: 700px) {
+  @media (min-width: @tablet-width) {
     width: 324px;
     height: 431px;
     margin: auto;
