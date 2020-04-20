@@ -1,8 +1,12 @@
 .product {
   .font-basic;
   .flex-row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 320px;
+  width: 280px;
+  box-sizing: border-box;
+  border-top: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -30,6 +34,9 @@
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .product__img {
@@ -38,4 +45,8 @@
     height: 431px;
     margin: auto;
   }
+}
+
+.product__info {
+  width: 140px;
 }
