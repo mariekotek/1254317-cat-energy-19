@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,7 +11,8 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo-button">
           <a href="" class="page-header__logo">
-            <img class="page-header__logo-image" src="../source/img/logo-mobile-header-svg.svg" width="191" height="39" alt="Cat Energy logo">
+            <img class="page-header__logo-image" src="../source/img/logo-mobile.svg" width="191" height="39" alt="Cat Energy logo">
+            <img class="page-header__logo-tablet" src="../source/img/logo-tablet.svg" alt="Cat Energy logo" width="174" height="59">
           </a>
           <button class="page-header__toggle" type="button">
             <?xml version="1.0" encoding="utf-8"?>
@@ -37,16 +37,16 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper">
         <h1 class="visually-hidden">Функциональное питание для котов Cat Energy</h1>
         <section class="product-description">
           <h2 class="product-description__title">Функциональное питание для котов</h2>
           <div class="product-description__text">Занялся собой? Займись котом!</div>
           <button class="product-description__button" type="button">Подобрать программу</button>
         </section>
+      <div class="page-main__wrapper">
         <section class="points">
           <ul class="points__list points-list">
-            <li class="points-list__item">
+            <li class="points-list__item point">
               <h3 class="point__title point--slim">Похудение</h3>
               <div class="point__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </div>
@@ -59,7 +59,7 @@
                 </svg>
               </a>
             </li>
-            <li class="points-list__item">
+            <li class="points-list__item point">
               <h3 class="point__title point--pro">Набор массы</h3>
               <div class="point__text">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -78,17 +78,17 @@
         <section class="product-features">
           <h2 class="product-features__title">Как это работает</h2>
           <ul class="product-features__list features">
-            <li class="features__item features__item features__item--leaf">
-              Функциональное питание содержит только полезные питательные вещества.
+            <li class="features__item features__item--leaf">
+              <div class="features__item-text">Функциональное питание содержит только полезные питательные вещества.</div>
             </li>
             <li class="features__item features__item--powder">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              <div class="features__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</div>
             </li>
             <li class="features__item features__item--dining">
-              Замените один-два приема обычной еды на наше функциональное питание.
+              <div class="features__item-text">Замените один-два приема обычной еды на наше функциональное питание.</div>
             </li>
             <li class="features__item features__item--clock">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              <div class="features__item-text">Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!</div>
             </li>
           </ul>
         </section>

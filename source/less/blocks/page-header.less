@@ -7,13 +7,38 @@
   padding-top: 11px;
   padding-bottom: 15px;
   border-bottom: 1px solid #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .page-header__toggle {
   border: none;
   outline: none;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 
 .page-header__wrapper {
   min-height: 260px;
@@ -29,6 +54,7 @@
   @media (min-width: @tablet-width) {
     min-height: 120px;
     width: @tablet-width;
+    padding-top: 15px;
     padding-right: 30px;
     padding-left: 30px;
 
@@ -38,10 +64,11 @@
 
   @media (min-width: @desktop-width) {
     min-height: 130px;
-    width: 1300px;
+    width: 100%;
     padding-right: 40px;
     padding-left: 40px;
-
-    flex-direction: row;
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
   }
 }

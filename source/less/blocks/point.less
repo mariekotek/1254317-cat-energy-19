@@ -10,8 +10,22 @@
   border-radius: 50%;
   background-color: #68b738;
   position: absolute;
-  top: 810px;
-  left: 45px;
+  top: 24px;
+  left: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 446px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .point--slim::after {
@@ -22,10 +36,24 @@
   background-repeat: no-repeat;
   background-size: 35px 49px;
   position: absolute;
-  top: 810px;
-  left: 55px;
-  right: 0;
-  bottom: 0;
+  top: 22px;
+  left: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 141px;
+    height: 194px;
+    top: 80px;
+    left: 475px;
+    background-size: 141px 194px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+    height: 97px;
+    top: 41px;
+    left: 65px;
+    background-size: 71px 97px;
+  }
 }
 
 .point--pro::before {
@@ -35,8 +63,22 @@
   border-radius: 50%;
   background-color: #68b738;
   position: absolute;
-  top: 1090px;
-  left: 45px;
+  top: 24px;
+  left: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    left: 448px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .point--pro::after {
@@ -47,10 +89,24 @@
   background-repeat: no-repeat;
   background-size: 67px 28px;
   position: absolute;
-  top: 1105px;
-  left: 35px;
-  right: 0;
-  bottom: 0;
+  top: 35px;
+  left: 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 113px;
+    top: 135px;
+    left: 412px;
+    background-size: 268px 113px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 57px;
+    top: 69px;
+    left: 34px;
+    background-size: 134px 57px;
+  }
 }
 
 .point__title {
@@ -62,8 +118,20 @@
   letter-spacing: normal;
   text-align: left;
   color: #111111;
+  margin-top: 30px;
   margin-left: 92px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1.03;
+    margin-top: 81px;
+    margin-left: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 216px;
+  }
 }
 
 .point__text {
@@ -80,6 +148,20 @@
   margin-left: 23px;
   padding-bottom: 23px;
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 52px;
+    padding-bottom: 0;
+    width: 340px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+    width: 444px;
+  }
 }
 
 .point__link {
@@ -94,4 +176,14 @@
   text-transform: uppercase;
   margin: 20px auto;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    margin-left: 52px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 36px;
+  }
 }
