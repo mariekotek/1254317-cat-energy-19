@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: normal;
+  font-weight: regular;
   font-style: normal;
 }
 
@@ -19,8 +19,7 @@
 @import "blocks/product-features.less";
 @import "blocks/features.less";
 @import "blocks/example.less";
-@import "blocks/example-num.less";
-@import "blocks/example-description.less";
+@import "blocks/example-table.less";
 @import "blocks/contact.less";
 @import "blocks/page-footer.less";
 @import "blocks/footer-links.less";
@@ -40,6 +39,11 @@
 
 body {
   background-color: #ffffff;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 a {

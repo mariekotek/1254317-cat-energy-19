@@ -8,14 +8,25 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
+  width: 80px;
+
+  @media (min-width: @tablet-width) {
+    width: 128px;
+    font-size: 20px;
+    line-height: 1;
+    margin: 39px auto 28px auto;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 124px;
+  }
 }
 
 .product-info__wrapper {
   display: flex;
-  flex-direction: row;
-}
-
-.product-info__info {
+  justify-content: space-between;
+  box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -25,20 +36,28 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
-  display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
 }
 
+.product-info__weight,
+.product-info__taste,
 .product-info__value {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: right;
-  color: #444444;
-  display: flex;
-  flex-direction: column;
+  .flex-row;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }

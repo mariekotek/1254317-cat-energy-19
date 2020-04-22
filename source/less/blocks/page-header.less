@@ -2,14 +2,43 @@
   .font-basic;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
-  height: 65px;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .page-header__toggle {
   border: none;
   outline: none;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 
 .page-header__wrapper {
   min-height: 260px;
@@ -17,6 +46,7 @@
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -24,6 +54,7 @@
   @media (min-width: @tablet-width) {
     min-height: 120px;
     width: @tablet-width;
+    padding-top: 15px;
     padding-right: 30px;
     padding-left: 30px;
 
@@ -33,10 +64,16 @@
 
   @media (min-width: @desktop-width) {
     min-height: 130px;
-    width: 1200px;
-    padding-right: 110px;
-    padding-left: 110px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
 
-    flex-direction: row;
+.page-header__wrapper-index {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
   }
 }
