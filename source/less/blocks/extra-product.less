@@ -1,5 +1,20 @@
 .extra-product {
+  box-sizing: border-box;
   border-top: 1px solid #cdcdcd;
+  .flex-column;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #cdcdcd;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 521px;
+  }
 }
 
 .extra-product:last-child {
@@ -16,10 +31,24 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-top: 28px;
+  }
 }
 
 .extra-product__button {
   .green-button;
   .font-button;
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    width: 633px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }

@@ -8,6 +8,11 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .extra-product-info__cost {
@@ -20,10 +25,20 @@
   letter-spacing: normal;
   text-align: right;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-left: 52px;
+  }
 }
 
 .extra-product-info {
   .flex-row;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+  }
 }

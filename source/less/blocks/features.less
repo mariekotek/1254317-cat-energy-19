@@ -1,6 +1,7 @@
 .features {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
 
   @media (min-width: @tablet-width) {
@@ -27,14 +28,18 @@
   padding-left: 60px;
   margin-bottom: 32px;
   width: 200px;
+  margin-right: 20px;
   position: relative;
   box-sizing: border-box;
-  margin-right: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 250px;
+    width: 230px;
     height: 250px;
     padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -44,6 +49,8 @@
     width: 255px;
     font-size: 16px;
     line-height: 1.5;
+    z-index: 8;
+    position: absolute;
   }
 }
 
@@ -86,7 +93,7 @@
     color: #f2f2f2;
     top: -37px;
     left: 120px;
-    opacity: 0.7;
+    z-index: 1;
   }
 }
 
@@ -109,6 +116,30 @@
   }
 }
 
+.features__item--powder::after {
+  content: "2";
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald", sans-serif;
+    font-size: 281px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f2f2f2;
+    top: -37px;
+    left: 100px;
+    z-index: 2;
+  }
+}
+
 .features__item--dining::before {
   content: "";
   width: 60px;
@@ -128,6 +159,30 @@
   }
 }
 
+.features__item--dining::after {
+  content: "3";
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald", sans-serif;
+    font-size: 281px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f2f2f2;
+    top: -37px;
+    left: 100px;
+    z-index: 3;
+  }
+}
+
 .features__item--clock::before {
   content: "";
   width: 60px;
@@ -144,5 +199,29 @@
     height: 80px;
     top: 0;
     left: 0;
+  }
+}
+
+.features__item--clock::after {
+  content: "4";
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    width: 71px;
+    height: 228px;
+    font-family: "Oswald", sans-serif;
+    font-size: 281px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f2f2f2;
+    top: -37px;
+    left: 100px;
+    z-index: 4;
   }
 }

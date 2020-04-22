@@ -1,5 +1,12 @@
 .extra-catalog__header {
   .flex-row;
+
+  @media (min-width: @tablet-width) {
+    width: 370px;
+    margin-top: -55px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+  }
 }
 
 .extra-catalog__title {
@@ -11,6 +18,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    margin-bottom: 75px;
+    text-align: center;
+  }
 }
 
 .extra-catalog__title-line {
@@ -19,6 +32,10 @@
   height: 3px;
   background-color: #68b738;
   margin-top: 42px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .extra-catalog {
