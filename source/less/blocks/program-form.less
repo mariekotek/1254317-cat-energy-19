@@ -5,6 +5,11 @@
   letter-spacing: normal;
   text-align: left;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 input {
@@ -16,11 +21,20 @@ input {
   color: #444444;
 }
 
+.program-form__flex {
+  .flex-row;
+  justify-content: space-between;
+}
+
 .program-form__name {
   width: 229px;
   height: 45px;
   opacity: 0.5;
   border: solid 1px #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 2;
+  }
 }
 
 .program-form__text {
