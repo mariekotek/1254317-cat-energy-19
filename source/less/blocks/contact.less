@@ -22,6 +22,18 @@
   }
 }
 
+.contact--form {
+  @media (min-width: @tablet-width) {
+    margin-left: -70px;
+    margin-right: -70px;
+    margin-top: 70px;
+  }
+}
+
+.contact img {
+  margin: 0 auto;
+}
+
 .contact__wrapper {
   display: flex;
   flex-direction: row;
@@ -86,6 +98,9 @@
 }
 
 .contact__map-mobile {
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

@@ -1,18 +1,17 @@
-.program-extra__item {
-  margin-bottom: 28px;
-  .flex-row;
-
+.form-choice {
   @media (min-width: @tablet-width) {
-    width: 50%;
-    margin-bottom: 24px;
+    border: solid 1px #cdcdcd;
   }
 
   @media (min-width: @desktop-width) {
-    width: 25%;
+    box-sizing: border-box;
+    width: 570px;
+    height: 205px;
+    margin-top: 0;
   }
 }
 
-.program-extra__checkbox {
+.form-choice__radio {
   width: 30px;
   height: 30px;
 
@@ -22,7 +21,7 @@
   }
 }
 
-.program-extra__label {
+.form-choice__label {
   line-height: 30px;
   margin-left: 16px;
 
@@ -30,4 +29,8 @@
     line-height: 40px;
     margin-left: 20px;
   }
+}
+
+.form-choice__flex {
+  .flex-row;
 }
