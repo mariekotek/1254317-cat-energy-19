@@ -76,7 +76,9 @@
           </ul>
         </section>
         <section class="product-features">
-          <h2 class="product-features__title">Как это работает</h2>
+          <div class="product-features__wrapper">
+            <h2 class="product-features__title">Как это работает</h2>
+          </div>
           <ul class="product-features__list features">
             <li class="features__item features__item--leaf">
               <div class="features__item-text">Функциональное питание содержит только полезные питательные вещества.</div>
@@ -93,49 +95,55 @@
           </ul>
         </section>
         <section class="example">
-          <h2 class="example__title">Живой пример</h2>
-          <div class="example__flex">
-            <div class="example__flex-text">
-              <div class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </div>
-              <ul class="example__table example-table">
-                <li class="example-table__item">
-                  <div class="example-table__num">5 кг</div>
-                  <div class="example-table__description">Снижение веса</div>
-                </li>
-                <li class="example-table__item">
-                  <div class="example-table__num">60 дней</div>
-                  <div class="example-table__description">Затрачено времени</div>
-                </li>
-                <li class="example__cost">
-                  <div>Затраты на питание:</div>
-                  <div>15 000 руб.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="example__img">
-              <img src="../source/img/before-mobile@1x.png" class="example__img-mobile" width="311" height="232" alt="ДО">
-              <img src="../source/img/after-mobile@1x.png" class="example__img-mobile-after" width="311" height="232" alt="ПОСЛЕ">
-              <img src="../source/img/before-tablet@1x.png" class="example__img-tablet" width="676" height="499" alt="ДО">
-              <img src="../source/img/after-tablet@1x.png" class="example__img-tablet-after" width="676" height="499" alt="ПОСЛЕ">
-              <img src="../source/img/before-desktop@1x.png" class="example__img-desktop" width="730" height="499" alt="ДО">
-              <img src="../source/img/after-desktop@1x.png" class="example__img-desktop-after" width="730" height="499" alt="ПОСЛЕ">
-              <div class="example__before-after">
-                <label class="example__label">Было<input type="range" name="" class="example__range">Стало</label>
+          <div class="example__wrapper">
+            <h2 class="example__title">Живой пример</h2>
+            <div class="example__flex">
+              <div class="example__flex-text">
+                <div class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </div>
+                <ul class="example__table example-table">
+                  <li class="example-table__item">
+                    <div class="example-table__num">5 кг</div>
+                    <div class="example-table__description">Снижение веса</div>
+                  </li>
+                  <li class="example-table__item">
+                    <div class="example-table__num">60 дней</div>
+                    <div class="example-table__description">Затрачено времени</div>
+                  </li>
+                  <li class="example__cost">
+                    <div>Затраты на питание:</div>
+                    <div>15 000 руб.</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="example__img">
+                <img src="../source/img/before-mobile@1x.png" class="example__img-mobile" width="311" height="232" alt="ДО">
+                <img src="../source/img/after-mobile@1x.png" class="example__img-mobile-after" width="311" height="232" alt="ПОСЛЕ">
+                <img src="../source/img/before-tablet@1x.png" class="example__img-tablet" width="676" height="499" alt="ДО">
+                <img src="../source/img/after-tablet@1x.png" class="example__img-tablet-after" width="676" height="499" alt="ПОСЛЕ">
+                <img src="../source/img/before-desktop@1x.png" class="example__img-desktop" width="730" height="499" alt="ДО">
+                <img src="../source/img/after-desktop@1x.png" class="example__img-desktop-after" width="730" height="499" alt="ПОСЛЕ">
+                <div class="example__before-after">
+                  <label class="example__label">Было<input type="range" name="" class="example__range">Стало</label>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section class="contact">
           <div class="contact__wrapper">
-            <div class="contact__invite">приглашаем<br>к сотрудничеству дилеров!</div>
-            <div class="contact__address">
-              <div>ул. Большая Конюшенная, д. 19/8</div>
-              <div>Санкт-Петербург</div>
+            <div class="contact__block">
+              <div class="contact__invite">приглашаем<br>к сотрудничеству дилеров!</div>
+              <div class="contact__address">
+                <div>ул. Большая Конюшенная, д. 19/8</div>
+                <div>Санкт-Петербург</div>
+              </div>
+            </div>
+            <div class="contact__img-wrapper">
+              <img src="../img/bg-map-mobile@1x.png" class="contact__map-mobile" width="320" height="400" alt="Карта">
+              <img src="../img/bg-map-tablet@1x.png" class="contact__map-tablet" width="767" height="400" alt="Карта">
+              <img src="../img/bg-map-desktop@1x.png" class="contact__map-desktop" width="1440" height="400" alt="Карта">
             </div>
           </div>
-          <img src="../source/img/bg-map-mobile@1x.png" class="contact__map-mobile" width="320" height="400" alt="Карта">
-          <img src="../source/img/bg-map-tablet@1x.png" class="contact__map-tablet" width="767" height="400" alt="Карта">
-          <img src="../source/img/bg-map-desktop@1x.png" class="contact__map-desktop" width="1440" height="400" alt="Карта">
         </section>
       </div>
     </main>
