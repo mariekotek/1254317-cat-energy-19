@@ -14,8 +14,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -160px;
-    margin-right: -160px;
+    margin-left: -110px;
+    margin-right: -110px;
     padding-top: 0;
     position: relative;
     margin-top: -72px;
@@ -31,9 +31,19 @@
 }
 
 .contact__wrapper {
+  box-sizing: border-box;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .contact__block {
@@ -101,8 +111,10 @@
 }
 
 .contact__img-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .contact__map-mobile {

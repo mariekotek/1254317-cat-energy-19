@@ -1,11 +1,13 @@
 .features {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -15,6 +17,7 @@
 }
 
 .features__item {
+  box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -25,19 +28,17 @@
   text-align: left;
   color: #444444;
   list-style: none;
-  padding-left: 60px;
+  padding-left: 80px;
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  padding-right: 20px;
   position: relative;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
-    height: 250px;
     padding-left: 0;
+    min-width: 250px;
+    min-height: 233px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,11 +47,8 @@
 }
 
 .features__item-text {
-  width: 195px;
-
   @media (min-width: @tablet-width) {
     margin-top: 120px;
-    width: 255px;
     font-size: 16px;
     line-height: 1.5;
     z-index: 8;
@@ -64,7 +62,7 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: -20px;
+  left: 0px;
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -107,7 +105,7 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: -20px;
+  left: 0px;
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -150,7 +148,7 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: -20px;
+  left: 0px;
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +191,7 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: -20px;
+  left: 0px;
   background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
   background-position: center;
