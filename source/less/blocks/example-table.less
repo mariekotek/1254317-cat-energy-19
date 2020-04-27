@@ -1,6 +1,15 @@
 .example-table {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 400px;
+  }
+}
+
+.example-table li {
+  list-style: none;
 }
 
 .example-table__item {
@@ -26,6 +35,11 @@
   height: 56px;
   border-radius: 3px;
   border: solid 1px #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .example-table__description {
@@ -39,8 +53,19 @@
   letter-spacing: normal;
   text-align: center;
   color: #444444;
-  width: 87px;
+  width: 80px;
   margin-top: -8px;
   background-color: #f2f2f2;
   border: 1px solid transparent;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    min-width: 130px;
+    font-size: 14px;
+    margin-top: -12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #eaeaea;
+  }
 }

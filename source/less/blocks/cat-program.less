@@ -1,8 +1,3 @@
-.cat-program {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .cat-program__title {
   .font-basic;
   font-size: 36px;
@@ -10,6 +5,12 @@
   letter-spacing: normal;
   text-align: left;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 20px;
+  }
 }
 
 .cat-program__text {
@@ -20,4 +21,10 @@
   text-align: left;
   color: #111111;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
 }
