@@ -7,6 +7,8 @@
 
 @tablet-width: 768px;
 @desktop-width: 1300px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 @import "mixins.less";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
@@ -44,6 +46,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   box-sizing: border-box;
+  width: 100%;
 
   @media (min-width: @desktop-width) {
     position: relative;

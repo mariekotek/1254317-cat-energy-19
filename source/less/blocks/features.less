@@ -33,7 +33,6 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
@@ -62,10 +61,15 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: 0px;
+  left: 0;
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 50px auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 80px;
@@ -105,10 +109,15 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: 0px;
+  left: 0;
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 50px auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 80px;
@@ -148,10 +157,15 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: 0px;
+  left: 0;
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 50px auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 80px;
@@ -191,10 +205,15 @@
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  left: 0px;
+  left: 0;
   background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 50px auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 80px;
