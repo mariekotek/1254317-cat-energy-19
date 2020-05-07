@@ -48,6 +48,7 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-svgstore": "^7.0.1",
     "npx": "^10.2.2",
+    "posthtml": "^0.13.0",
     "posthtml-include": "^1.4.3"
   }
 }

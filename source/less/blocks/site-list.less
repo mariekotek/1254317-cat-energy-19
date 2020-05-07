@@ -43,12 +43,31 @@
 }
 
 .site-list__item a {
+  padding-bottom: 9px;
   text-decoration: none;
   color: #111111;
+}
+
+.site-list__item a:hover {
+  opacity: 0.6;
+}
+
+.site-list__item a:focus {
+  opacity: 0.3;
 }
 
 .site-list__item-index a {
   @media (min-width: @desktop-width) {
     color: #ffffff;
+  }
+}
+
+.site-list__item--active a {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }

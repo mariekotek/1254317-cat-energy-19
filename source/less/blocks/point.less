@@ -178,6 +178,7 @@
   text-transform: uppercase;
   margin: 20px auto;
   margin-left: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-top: 50px;
@@ -188,4 +189,28 @@
   @media (min-width: @desktop-width) {
     margin-top: 36px;
   }
+}
+
+.point__link-text::after {
+  content: "";
+  width: 40px;
+  height: 15px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 12px;
+  position: absolute;
+  top: 25px;
+  left: 125px;
+}
+
+.point__link:hover {
+  .point__link-text::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-size: 34px 12px;
+  }
+}
+
+.point__link:active {
+  opacity: 0.3;
 }

@@ -8,7 +8,7 @@
   </head>
   <body>
     <div style="display: none;">
-      <include src="../build/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper-index">
@@ -21,9 +21,7 @@
             </picture>
           </a>
           <button class="page-header__toggle" type="button">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve" width="19px" height="19px">
-            <use xlink:href="svg.svg#close"></use>
-            </svg>
+            <span class="page-header__open"></span>
           </button>
         </div>
         <nav class="page-header__nav main-nav">
@@ -56,10 +54,7 @@
               <div class="point__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </div>
               <a href="#" class="point__link">
-                Каталог Slim
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve" width="25" height="12">
-                <use xlink:href="svg.svg#arrow-long"></use>
-                </svg>
+                <p class="point__link-text">Каталог Slim</p>
               </a>
             </li>
             <li class="points-list__item point">
@@ -68,10 +63,7 @@
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </div>
               <a href="#" class="point__link">
-                Каталог Pro
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve" width="25" height="12">
-                <use xlink:href="svg.svg#arrow-long"></use>
-                </svg>
+                <p class="point__link-text">Каталог Pro</p>
               </a>
             </li>
           </ul>
@@ -151,6 +143,10 @@
             </div>
             <div class="contact__img-wrapper">
               <picture>
+                <source srcset="img/map-pin.webp">
+                <img src="img/map-pin.png" class="contact__map-pin">
+              </picture>
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
                 <source src="img/bg-map-mobile@1x.webp" srcset="img/bg-map-mobile@2x.webp 2x">
@@ -169,44 +165,45 @@
           <div class="footer-links__logo">
             <a href="" class="footer-links__link">
               <svg class="footer-links__logo-svg">
-                <use xlink:href="svg.svg#logo-footer"></use>
+                <use xlink:href="img/sprite.svg#logo-footer"></use>
               </svg>
             </a>
           </div>
           <div class="footer-links__social social">
             <div class="social__item">
-              <a href="" class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12">
-                <use xlink:href="svg.svg#vk"></use>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social__vk" width="22" height="12" viewBox="0 0 22 12">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </div>
             <div class="social__item">
-              <a href="" class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 23 23">
-                <use xlink:href="svg.svg#instagram"></use>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social__insta" width="17" height="17" viewBox="0 0 23 23">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </div>
             <div class="social__item">
-              <a href="" class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" viewBox="0 0 10 19">
-                  <use xlink:href="svg.svg#facebook"></use>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social__fb" width="10" height="19" viewBox="0 0 10 19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </div>
           </div>
           <div class="footer-links__academy academy">
-            <p class="academy__link">HTML Academy</p>
-            <a href="" class="academy__logo">
+            <a href="#" class="academy__logo">
+              <p class="academy__link">HTML Academy</p>
               <svg class="academy__logo-svg">
-                <use xlink:href="svg.svg#academy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
         </section>
       </div>
     </footer>
+  <script src="js/script.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
   </body>
