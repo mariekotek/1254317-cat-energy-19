@@ -122,6 +122,7 @@
   color: #111111;
   margin-top: 30px;
   margin-left: 92px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
@@ -129,6 +130,7 @@
     line-height: 1.03;
     margin-top: 81px;
     margin-left: 55px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -146,8 +148,10 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
-  width: 230px;
+  width: 227px;
+  box-sizing: border-box;
   margin-left: 23px;
+  margin-right: 30px;
   padding-bottom: 23px;
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 
@@ -156,13 +160,23 @@
     line-height: 1.5;
     margin-left: 52px;
     padding-bottom: 0;
-    width: 340px;
+    width: 375px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 45px;
-    width: 444px;
+    width: 470px;
+  }
+}
+
+.point:nth-of-type(2) .point__text {
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 470px;
   }
 }
 
@@ -176,18 +190,19 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
-  margin: 20px auto;
+  margin: 0 auto;
   margin-left: 20px;
   position: relative;
+  margin-right: 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 50px;
+    margin-top: 35px;
     margin-left: 52px;
     font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 36px;
+    margin-top: 10px;
   }
 }
 
@@ -199,8 +214,13 @@
   background-repeat: no-repeat;
   background-size: 25px 12px;
   position: absolute;
-  top: 25px;
-  left: 125px;
+  top: 19px;
+  left: 98px;
+
+  @media (min-width: @tablet-width) {
+    top: 25px;
+    left: 132px;
+  }
 }
 
 .point__link:hover {

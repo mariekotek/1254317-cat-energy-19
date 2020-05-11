@@ -42,8 +42,8 @@
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
-  left: -20px;
+  top: -8px;
+  left: -15px;
 }
 
 .page-header__open::after {
@@ -70,6 +70,24 @@
 .page-header {
   @media (min-width: @desktop-width) {
     position: relative;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: @desktop-width) {
+    padding-top: 25px;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 203px;
+    height: auto;
   }
 }
 

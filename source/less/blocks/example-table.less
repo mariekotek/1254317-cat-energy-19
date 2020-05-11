@@ -1,14 +1,18 @@
 .example-table {
   padding-left: 20px;
   padding-right: 20px;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) and (max-width: 1299px) {
-    padding-bottom: 150px;
+    margin-top: 55px;
+    margin-bottom: 150px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     width: 400px;
+    justify-content: space-around;
   }
 }
 
@@ -21,6 +25,10 @@
   text-align: center;
   .flex-column;
   align-items: center;
+}
+
+.example-table__item:first-of-type {
+  margin-right: 40px;
 }
 
 .example-table__num {
@@ -43,6 +51,8 @@
   @media (min-width: @tablet-width) {
     width: 162px;
     height: 72px;
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
@@ -58,7 +68,7 @@
   text-align: center;
   color: #444444;
   width: 80px;
-  margin-top: -8px;
+  margin-top: -10px;
   background-color: #f2f2f2;
   border: 1px solid transparent;
 
@@ -67,6 +77,8 @@
     min-width: 130px;
     font-size: 14px;
     margin-top: -12px;
+    font-size: 14px;
+    line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
