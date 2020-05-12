@@ -10,6 +10,8 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: none;
+    margin-top: 20px;
   }
 }
 
@@ -43,7 +45,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: -8px;
-  left: -15px;
+  left: -25px;
 }
 
 .page-header__open::after {
@@ -54,9 +56,8 @@
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
+  top: -8px;
   left: -25px;
-  display: none;
 }
 
 .page-header__logo-image:hover {
@@ -74,6 +75,10 @@
 }
 
 .page-header__logo {
+  @media (min-width: @tablet-width) {
+    height: 60px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 25px;
   }
@@ -92,7 +97,6 @@
 }
 
 .page-header__wrapper {
-  min-height: 260px;
   width: 320px;
   padding-right: 20px;
   padding-left: 20px;

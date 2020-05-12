@@ -52,9 +52,24 @@
   height: 45px;
   margin-left: 15px;
   padding-left: 15px;
+  opacity: 0.5;
 
   @media (min-width: @tablet-width) {
     height: 52px;
     padding-left: 20px;
   }
+}
+
+.form-basic input:hover {
+  opacity: 1;
+}
+
+.form-basic input:focus {
+  opacity: 1;
+  border-color: #444444;
+  outline: none;
+}
+
+.form-basic input:invalid {
+  border-color: #ff8282;
 }

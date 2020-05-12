@@ -12,9 +12,13 @@
   }
 }
 
-.program-extra__checkbox {
+.program-extra__check {
   width: 30px;
   height: 30px;
+  background-color: #ffffff;
+  border: solid 1px #cdcdcd;
+  position: absolute;
+  left: -10px;
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -22,12 +26,28 @@
   }
 }
 
+.program-extra__checkbox:checked + .program-extra__check::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 17px;
+    background-image: url(../img/icon-tick.svg);
+    top: 12px;
+    left: 10px;
+
+    @media (min-width: @tablet-width) {
+      width: 21px;
+      height: 16px;
+  }
+}
+
 .program-extra__label {
   line-height: 30px;
-  margin-left: 16px;
+  padding-left: 26px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     line-height: 40px;
-    margin-left: 20px;
+    padding-left: 46px;
   }
 }

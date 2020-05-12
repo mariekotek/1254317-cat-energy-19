@@ -7,6 +7,6 @@ popup.classList.add("main-nav-hide");
 button.addEventListener("click", function (evt) {
 evt.preventDefault();
 popup.classList.toggle("main-nav-hide");
-  close.classList.toggle("page-header__toggle-hide");
-  menu.classList.toggle("page-header__toggle-hide");
+  /*close.classList.toggle("page-header__toggle-hide");
+  menu.classList.toggle("page-header__toggle-hide");*/
 });

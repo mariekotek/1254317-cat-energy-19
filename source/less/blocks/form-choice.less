@@ -1,4 +1,6 @@
 .form-choice {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     border: solid 1px #cdcdcd;
   }
@@ -23,12 +25,47 @@
 
 .form-choice__label {
   line-height: 30px;
-  margin-left: 16px;
+  margin-left: 36px;
 
   @media (min-width: @tablet-width) {
     line-height: 40px;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 13px;
   }
+}
+
+.form-choice__radio-button {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #cdcdcd;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 10px;
+}
+
+.form-choice__radio-button:hover,
+.form-choice__label:hover {
+  .form-choice__radio-button {
+    border: solid 1px #bababa;
+  }
+}
+
+.form-choice__radio-button:active,
+.form-choice__label:active {
+  opacity: 0.3;
+}
+
+.form-choice__radio:checked + .form-choice__radio-button::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  background-color: #68b738;
+  position: absolute;
+  top: 25%;
+  left: 10px;
 }
 
 .form-choice__flex {
