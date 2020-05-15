@@ -10,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-button">
-          <a href="" class="page-header__logo">
+          <a href="index.html" class="page-header__logo">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -41,7 +41,7 @@
         <section class="cat-program">
           <h1 class="cat-program__title">Подбор программы</h1>
           <div class="cat-program__text">Заполните анкету и мы подберем<br>программу питания для вашего кота</div>
-          <form class="cat-program__form program-form" action="" method="">
+          <form class="cat-program__form program-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="program-form__main">
               <div class="program-form__basic form-basic">
                 <div class="form-basic__flex">
@@ -74,11 +74,11 @@
             <div class="program-form__contact form-contact">
               <div class="form-contact__flex">
                 <label class="form-contact__label" for="email">E-mail:*</label>
-                <input type="email" class="form-contact__email" name="" id="email" value="kuklachev@gmail.com">
+                <input type="email" class="form-contact__email" name="email" id="email" value="kuklachev@gmail.com">
               </div>
               <div class="form-contact__flex">
                 <label class="form-contact__label" for="tel">Телефон:*</label>
-                <input type="tel" class="form-contact__tel" name="" id="tel" value="8 (960) 900-60-90">
+                <input type="tel" class="form-contact__tel" name="tel" id="tel" value="8 (960) 900-60-90">
               </div>
             </div>
             <h2 class="program-form__title">Комментарий</h2>
@@ -115,11 +115,14 @@
             <div class="contact__block">
               <div class="contact__invite">приглашаем<br>к сотрудничеству дилеров!</div>
               <div class="contact__address">
-                <div>ул. Большая Конюшенная, д. 19/8</div>
-                <div>Санкт-Петербург</div>
+                <div>ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</div>
               </div>
             </div>
             <div class="contact__img-wrapper">
+              <!--<picture>
+                <source srcset="img/map-pin.webp">
+                <img src="img/map-pin.png" class="contact__map-pin" width="55" height="53" alt="Cat Energy на карте">
+              </picture>
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -127,7 +130,8 @@
                 <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
                 <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" class="contact__map" width="320" height="400" alt="Карта">
-              </picture>
+              </picture>-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d542.379514776576!2d30.32299878262538!3d59.938699235444105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589557348348!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="contact__map"></iframe>
             </div>
           </div>
         </section>

@@ -45,10 +45,13 @@
   },
   "dependencies": {
     "del": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-posthtml": "^3.0.4",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
     "npx": "^10.2.2",
     "posthtml": "^0.13.0",
-    "posthtml-include": "^1.4.3"
+    "posthtml-include": "^1.4.3",
+    "uglify": "^0.1.5"
   }
 }
