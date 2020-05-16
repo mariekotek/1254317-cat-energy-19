@@ -1,10 +1,12 @@
 .footer-links {
-  display: flex;
-  flex-direction: column;
+  .flex-column;
 
   @media (min-width: @tablet-width) {
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 150px;
+    padding-top: 30px;
   }
 }
 
@@ -21,7 +23,17 @@
 
 .footer-links__logo-svg {
   width: 128px;
-  height: 96px;
+  height: 24px;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.footer-links__logo-svg:hover {
+  opacity: 0.8;
+}
+
+.footer-links__logo-svg:active {
+  opacity: 0.6;
 }
 
 .footer-links__social {
@@ -40,6 +52,8 @@
   padding: 22px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: auto 0;
+    padding-top: 25px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

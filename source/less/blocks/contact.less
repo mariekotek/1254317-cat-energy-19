@@ -1,6 +1,5 @@
 .contact {
   margin: 0 auto;
-  margin-top: 30px;
   margin-left: -20px;
   margin-right: -20px;
   .font-basic;
@@ -9,7 +8,7 @@
     margin-top: 0;
     margin-left: -30px;
     margin-right: -30px;
-    padding-top: 69px;
+    padding-top: 0;
     background-color: #f2f2f2;
   }
 
@@ -18,13 +17,12 @@
     margin-right: -110px;
     padding-top: 0;
     position: relative;
-    margin-top: -92px;
+    margin-top: -112px;
   }
 }
 
 .contact--index {
   margin: 0 auto;
-  margin-top: 31px;
   margin-left: -20px;
   margin-right: -20px;
   .font-basic;
@@ -42,7 +40,7 @@
     margin-right: -110px;
     padding-top: 0;
     position: relative;
-    margin-top: -92px;
+    margin-top: -112px;
     background-color: #f2f2f2;
   }
 }
@@ -61,6 +59,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -74,25 +73,32 @@
 .contact__block {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 26px;
+  padding-top: 31px;
   padding-left: 20px;
+  position: absolute;
+  background-color: #ffffff;
+  min-height: 114px;
+  box-sizing:border-box;
+  top: -76px;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
-    height: 201px;
+    min-height: 201px;
     box-sizing: border-box;
     background-color: #ffffff;
     border: 1px solid transparent;
     position: absolute;
     top: 95px;
     left: 110px;
-    padding: 69px 71px 60px 71px;
+    padding-top: 60px;
+    padding-right: 20px;
   }
 }
 
@@ -109,6 +115,7 @@
 
   @media (min-width: @tablet-width) {
     width: 170px;
+    padding-left: 71px;
     padding-right: 40px;
     font-size: 20px;
     line-height: 1.25;
@@ -128,10 +135,17 @@
   .flex-column;
 
   @media (min-width: @tablet-width) {
-    width: 150px;
+    width: 160px;
     padding-left: 40px;
-    justify-content: space-between;
+    padding-right: 72px;
     min-height: 80px;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -140,62 +154,70 @@
   margin: 0;
   width: 100%;
   padding: 0;
+  margin-top: 76px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: 320px 400px;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: 768px 400px;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+  margin-top: 0px;
+  background-image: url("../img/bg-map-desktop@1x.png");
+  background-size: 1300px 400px;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-desktop@2x.png");
+    }
+  }
 }
 
+.contact__map-pin {
+  z-index: 2;
+  position: absolute;
+  top: 177px;
+  left: 130px;
+  width: 60px;
+  height: 54px;
+
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    height: 106px;
+    top: 210px;
+    left: 320px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 150px;
+    left: 70%;
+  }
+}
 
 .contact__map {
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  height: auto;
+  width: 100%;
+  height: 400px;
 
   @media (min-width: @tablet-width) {
     margin-top: 59px;
-    width: 767px;
-    height: auto;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
-    width: 100%;
-    height: auto;
   }
 }
-
-/*.contact__map-mobile {
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.contact__map-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    margin-top: 59px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.contact__map-desktop {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-  }
-}*/

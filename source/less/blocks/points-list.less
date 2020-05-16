@@ -4,6 +4,10 @@
   flex-direction: column;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
   }
@@ -22,6 +26,7 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     height: 372px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
