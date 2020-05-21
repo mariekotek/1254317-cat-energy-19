@@ -10,12 +10,10 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
   list-style: none;
   letter-spacing: 0.04em;
-
   box-sizing: border-box;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -27,12 +25,15 @@
     font-size: 18px;
     line-height: 1.39;
     margin-right: 20px;
+    margin-left: 15px;
+    letter-spacing: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 1.25;
     font-weight: 400;
+    padding-top: 35px;
     text-align: left;
   }
 }
@@ -40,9 +41,13 @@
 .site-list__item:last-child {
   border-bottom: none;
 
-    @media (min-width: @tablet-width) {
-      margin-right: 0;
-    }
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 70px;
+  }
 }
 
 .site-list__item a {
@@ -66,6 +71,12 @@
 }
 
 .site-list__item--active a {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+.site-list__item-index--active a {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid #68b738;
   }

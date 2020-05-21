@@ -1,14 +1,19 @@
 .form-choice {
   position: relative;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 50px;
     border: solid 1px #cdcdcd;
   }
 
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
     width: 570px;
-    height: 205px;
+    height: 200px;
     margin-top: 0;
   }
 }
@@ -25,29 +30,29 @@
 
 .form-choice__label {
   line-height: 30px;
-  margin-left: 50px;
-  margin-top: 5px;
+  margin-left: 28px;
+  margin-top: 7px;
   margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     line-height: 40px;
-    margin-left: 50px;
-    margin-top: 13px;
+    margin-left: 58px;
   }
 }
 
 .form-choice__radio-button {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: solid 1px #cdcdcd;
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  left: 10px;
+  left: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
+    left: 26px;
   }
 }
 
@@ -65,21 +70,45 @@
 
 .form-choice__radio:checked + .form-choice__radio-button::after {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border: solid 1px transparent;
   border-radius: 50%;
   background-color: #68b738;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 27%;
+  left: 27%;
 
   @media (min-width: @tablet-width) {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    left: 25%;
+    top: 25%;
   }
 }
 
 .form-choice__flex {
   .flex-row;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.form-choice__flex:first-of-type {
+  margin-top: 15px;
+}
+
+.form-choice__flex:last-of-type {
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
 }
