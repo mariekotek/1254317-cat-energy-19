@@ -1,3 +1,27 @@
 .points {
   .font-basic;
+  margin-top: -15px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -80px;
+  }
+}
+
+.points__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

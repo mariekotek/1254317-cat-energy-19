@@ -1,5 +1,26 @@
+.program-extra {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.program-extra__flex {
+  .flex-column;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    .flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .program-extra__item {
-  margin-bottom: 28px;
+  margin-bottom: 13px;
   .flex-row;
 
   @media (min-width: @tablet-width) {
@@ -8,13 +29,86 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 25%;
+    width: 20%;
   }
 }
 
-.program-extra__checkbox {
+.program-extra__title {
+  width: 240px;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #111111;
+  margin-top: 30px;
+  margin-bottom: 32px;
+  text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 1;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.program-extra__title::before {
+  content: "";
+  width: 0;
+  background-color: #68b738;
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    height: 3px;
+    width: 30px;
+    top: 29%;
+    left: -11%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    top: 39.75%;
+    left: -9%;
+  }
+}
+
+.program-extra__title::after {
+  content: "";
+  width: 136px;
+  height: 3px;
+  background-color: #68b738;
+  position: absolute;
+  top: 17%;
+  left: 58%;
+
+  @media (min-width: @tablet-width) {
+    width: 447px;
+    top: 29%;
+    left: 40%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1080px;
+    top: 39.75%;
+    left: 21%;
+  }
+}
+
+.program-extra__check {
   width: 30px;
   height: 30px;
+  background-color: #ffffff;
+  border: solid 1px #cdcdcd;
+  position: absolute;
+  left: 3px;
 
   @media (min-width: @tablet-width) {
     width: 40px;
@@ -22,12 +116,37 @@
   }
 }
 
+.program-extra__checkbox:checked + .program-extra__check::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 22px 17px;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 20%;
+
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 16px;
+    background-size: 21px 16px;
+    top: 25%;
+    left: 25%;
+  }
+}
+
 .program-extra__label {
   line-height: 30px;
-  margin-left: 16px;
+  padding-left: 46px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     line-height: 40px;
-    margin-left: 20px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
   }
 }
