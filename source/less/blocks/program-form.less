@@ -10,6 +10,11 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 /*.program-form input {
@@ -28,16 +33,6 @@
     padding-left: 20px;
   }
 }*/
-
-.program-form__choice {
-  @media (min-width: @tablet-width) {
-    margin-top: 50px;
-    border: 1px solid #cdcdcd;
-    padding-left: 28px;
-    padding-bottom: 33px;
-    padding-top: 36px;
-  }
-}
 
 .program-form__text {
   width: 280px;
@@ -58,40 +53,6 @@
   }
 }
 
-.program-form__title {
-  width: 240px;
-  font-size: 24px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  color: #111111;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-transform: none;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    font-size: 36px;
-    line-height: 1;
-    width: 100%;
-  }
-}
-
-.program-form__title-line {
-  display: block;
-  width: 53px;
-  height: 3px;
-  background-color: #68b738;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
 .program-form__necessary {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -107,7 +68,9 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 1;
-    margin: 17px auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 80px;
   }
 }
 
@@ -122,11 +85,22 @@
   @media (min-width: @tablet-width) {
     width: 283px;
     height: 52px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
   }
+}
+
+.program-form__button:hover {
+  background-color: #5eaa2f;
+}
+
+.program-form__button:active {
+  background-color: #5eaa2f;
+  opacity: 0.3;
 }
 
 /*Сетки*/
@@ -164,9 +138,19 @@
 .program-form__send {
   .flex-column;
   height: 100%;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    padding: 0;
+    margin-top: 35px;
     margin-bottom: 70px;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    margin-bottom: 45px;
   }
 }

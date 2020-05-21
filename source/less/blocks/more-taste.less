@@ -2,15 +2,20 @@
   .font-basic;
   .flex-column;
   align-items: center;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
   padding-bottom: 25px;
   border-bottom: solid 1px #ededed;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     width: 324px;
+    box-sizing: border-box;
     height: 431px;
-    margin-bottom: 140px;
+    margin-top: 10px;
+    margin-bottom: 70px;
     background-color: #ffffff;
     padding-bottom: 0;
     border: 1px solid #cdcdcd;
@@ -18,16 +23,24 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    height: 432px;
   }
 }
 
-.more-taste svg {
+.more-taste__plus {
   margin-top: 25px;
+  width: 31px;
+  height: 31px;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-color: #ffffff;
+  background-size: cover;
+  opacity: 0.2;
 
   @media (min-width: @tablet-width) {
     width: 61px;
     height: 61px;
     margin-top: 55px;
+    background-image: url("../img/icon-plus.svg");
   }
 }
 
@@ -42,13 +55,18 @@
   text-align: center;
   color: #111111;
   margin-top: 25px;
-  margin-bottom: 11px;
+  margin-bottom: -5px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1;
     width: 140px;
-    margin-bottom: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -67,13 +85,19 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     width: 170px;
-    margin-bottom: 95px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 83px;
   }
 }
 
 .more-taste__button {
   width: 280px;
   height: 40px;
+  box-sizing: border-box;
+  padding-top: 10px;
   background-color: #f2f2f2;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -89,9 +113,18 @@
 
   @media (min-width: @tablet-width) {
     width: 249px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
   }
+}
+
+.more-taste__button:hover {
+  background-color: #ebebeb;
+}
+
+.more-taste__button:active {
+  opacity: 0.3;
 }

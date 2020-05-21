@@ -1,14 +1,98 @@
 .form-contact {
   .flex-column;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.form-contact__title {
+  width: 240px;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #111111;
+  margin-top: 30px;
+  margin-bottom: 32px;
+  text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 1;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 1;
+    width: 100%;
+  }
+}
+
+.form-contact__title::before {
+  content: "";
+  background-color: #68b738;
+  position: absolute;
+  width: 0;
+
+  @media (min-width: @tablet-width) {
+    height: 3px;
+    width: 30px;
+    top: 31%;
+    left: -11%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    top: 28%;
+    left: -9%;
+  }
+}
+
+.form-contact__title::after {
+  content: "";
+  width: 99px;
+  height: 3px;
+  background-color: #68b738;
+  position: absolute;
+  top: 19%;
+  left: 69%;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    top: 31%;
+    left: 88%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    top: 28%;
+    left: 45%;
+  }
+}
+
+.form-contact__point {
+  .flex-row;
+}
+
+.form-contact__flex {
+  .flex-column;
 
   @media (min-width: @desktop-width) {
     .flex-row;
     justify-content: space-between;
   }
-}
-
-.form-contact__flex {
-  .flex-row;
 }
 
 .form-contact__label {
@@ -21,8 +105,8 @@
 }
 
 .form-contact__email {
-  width: 219px;
-  height: 45px;
+  width: 200px;
+  height: 43px;
   opacity: 0.5;
   border: solid 1px #cdcdcd;
   flex-grow: 2;
@@ -32,30 +116,66 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
-  background-color: #ffffff;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-size: 18px 14px;
-  background-position: 95% 50%;
   margin-left: 12px;
   padding-left: 16px;
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    height: 52px;
+    width: 530px;
+    height: 50px;
     margin-left: 16px;
     padding-left: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
-    width: 486px;
+    width: 466px;
+  }
+}
+
+.form-contact__svg--mail {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 85%;
+  top: 55%;
+  fill: #222222;
+
+  @media (min-width: @tablet-width) {
+    left: 95%;
+    top: 62%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 44%;
+    top: 76%;
+  }
+}
+
+.form-contact__svg--tel {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 85%;
+  top: 79%;
+  fill: #222222;
+
+  @media (min-width: @tablet-width) {
+    left: 95%;
+    top: 83%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 97%;
+    top: 76%;
   }
 }
 
 .form-contact__tel {
-  width: 204px;
-  height: 45px;
+  width: 184px;
+  height: 43px;
   opacity: 0.5;
   flex-grow: 2;
   .font-uppercase;
@@ -65,23 +185,53 @@
   text-align: left;
   color: #444444;
   border: solid 1px #cdcdcd;
-  background-color: #ffffff;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 21px 21px;
-  background-position: 95% 50%;
   margin-left: 12px;
   padding-left: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    height: 52px;
+    width: 505px;
+    height: 50px;
     margin-left: 16px;
     padding-left: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
-    width: 472px;
+    width: 452px;
   }
+}
+
+.form-contact input:hover,
+.form-contact__label:hover {
+  opacity: 1;
+}
+
+.form-contact__tel:focus + .form-contact__svg--tel path {
+  fill: #68b738;
+}
+
+.form-contact__email:focus + .form-contact__svg--mail path {
+  fill: #68b738;
+}
+
+.form-contact input:focus,
+.form-contact__label:focus {
+  opacity: 1;
+  border: solid 2px #444444;
+  outline: none;
+}
+
+.form-contact input:invalid {
+  border: solid 2px #ff8282;
+}
+
+.form-contact__tel:invalid + .form-contact__svg--tel path {
+  fill: #ff8282;
+}
+
+.form-contact__email:invalid + .form-contact__svg--mail path {
+  fill: #ff8282;
 }
