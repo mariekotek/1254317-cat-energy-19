@@ -1,8 +1,9 @@
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
-  font-weight: medium;
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @tablet-width: 768px;
@@ -41,8 +42,10 @@
 @import "blocks/form-basic.less";
 @import "blocks/form-choice.less";
 @import "blocks/form-contact.less";
+@import "blocks/form-comment.less";
 
 body {
+  font-family: "Oswald", "Arial", sans-serif;
   background-color: #ffffff;
   margin: 0 auto;
   box-sizing: border-box;
@@ -55,9 +58,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
