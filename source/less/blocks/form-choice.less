@@ -1,5 +1,6 @@
 .form-choice {
   position: relative;
+  box-sizing: border-box;
   border-top: solid 1px #cdcdcd;
   border-bottom: solid 1px #cdcdcd;
   padding-left: 20px;
@@ -15,6 +16,18 @@
     width: 570px;
     height: 200px;
     margin-top: 0;
+    padding: 0;
+  }
+}
+
+.form-choice__wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -36,7 +49,11 @@
 
   @media (min-width: @tablet-width) {
     line-height: 40px;
-    margin-left: 58px;
+    padding-left: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
   }
 }
 
@@ -63,9 +80,12 @@
   }
 }
 
-.form-choice__radio-button:active,
-.form-choice__label:active {
+.form-choice__radio-button:active {
   opacity: 0.3;
+}
+
+.form-choice__radio:focus + .form-choice__radio-button {
+  border: solid 1px #bababa;
 }
 
 .form-choice__radio:checked + .form-choice__radio-button::after {
@@ -82,7 +102,7 @@
   @media (min-width: @tablet-width) {
     width: 16px;
     height: 16px;
-    left: 25%;
+    left: 27%;
     top: 25%;
   }
 }

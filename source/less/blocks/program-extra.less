@@ -2,20 +2,36 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
 
+.program-extra__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 .program-extra__flex {
   .flex-column;
   width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     .flex-row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -46,41 +62,29 @@
   margin-top: 30px;
   margin-bottom: 32px;
   text-transform: none;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-top: 65px;
     margin-bottom: 60px;
     font-size: 36px;
     line-height: 1;
-    width: 100%;
+    width: 212px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    z-index: 2;
+    padding-left: 40px;
+    margin-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 60px;
+    margin-left: 70px;
   }
 }
 
-.program-extra__title::before {
-  content: "";
-  width: 0;
-  background-color: #68b738;
-  position: absolute;
-
-  @media (min-width: @tablet-width) {
-    height: 3px;
-    width: 30px;
-    top: 29%;
-    left: -11%;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 70px;
-    top: 39.75%;
-    left: -9%;
-  }
-}
-
-.program-extra__title::after {
+.program-extra__wrapper::after {
   content: "";
   width: 136px;
   height: 3px;
@@ -88,17 +92,16 @@
   position: absolute;
   top: 17%;
   left: 58%;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    width: 447px;
+    width: 100%;
     top: 29%;
-    left: 40%;
+    left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1080px;
-    top: 39.75%;
-    left: 21%;
+    top: 39%;
   }
 }
 
@@ -133,6 +136,25 @@
     background-size: 21px 16px;
     top: 25%;
     left: 25%;
+  }
+}
+
+.program-extra__check:hover,
+.program-extra__label:hover {
+  .program-extra__check {
+    border-color: #bababa;
+  }
+}
+
+.program-extra__check:active,
+.program-extra__label:active {
+  opacity: 0.3;
+}
+
+.program-extra__check:focus,
+.program-extra__label:focus {
+  .program-extra__check {
+    border-color: #bababa;
   }
 }
 

@@ -51,6 +51,10 @@ gulp.task("server", function () {
   gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
 });
 
+gulp.task("clean", function () {
+  return del("build");
+});
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -112,10 +116,6 @@ gulp.task("copy", function () {
     base: "source"
   })
   .pipe(gulp.dest("build"));
-});
-
-gulp.task("clean", function () {
-  return del("build");
 });
 
 gulp.task("refresh", function (done) {

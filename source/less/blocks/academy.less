@@ -8,12 +8,10 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
+  .flex-row;
 }
 
 .academy {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 10px;
 
   @media (min-width: @tablet-width) {
@@ -21,22 +19,28 @@
     margin: 0;
     padding-top: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
+  }
 }
 
 .academy__logo {
-  margin-left: 10px;
-  margin-top: 3px;
+  margin-left: 21px;
+  margin-top: 7px;
   width: 27px;
   height: 34px;
   fill: #666666;
 }
 
-.academy__logo:hover {
+.academy__link:hover .academy__logo path {
   fill: #68b738;
 }
 
-.academy__logo:active,
-.academy__link:active {
+.academy__link:active .academy__logo path {
   fill: #68b738;
+}
+
+.academy__link:active {
   opacity: 0.3;
 }
