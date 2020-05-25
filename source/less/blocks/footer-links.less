@@ -5,14 +5,12 @@
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 150px;
     padding-top: 25px;
   }
 }
 
 .footer-links__logo {
   box-sizing: border-box;
-  padding: auto;
   text-align: center;
   border-bottom: 1px solid #cdcdcd;
 
@@ -26,6 +24,10 @@
   height: 24px;
   padding-top: 45px;
   padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer-links__logo-svg:hover {
@@ -43,7 +45,6 @@
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0;
-    padding-top: 40px;
     width: 124px;
   }
 }
@@ -52,7 +53,7 @@
   padding: 22px 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 25px;
+    padding-top: 0;
     padding-right: 0;
     padding-left: 0;
   }

@@ -11,26 +11,34 @@
   .flex-row;
 }
 
+.academy__link p {
+  @media (min-width: @tablet-width) {
+    width: 120px;
+  }
+}
+
 .academy {
-  padding-top: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: @tablet-width) {
     width: 162px;
     margin: 0;
-    padding-top: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 40px;
+    margin-top: -10px;
+    padding: 0;
   }
 }
 
 .academy__logo {
-  margin-left: 21px;
+  margin-left: 47%;
   margin-top: 7px;
   width: 27px;
   height: 34px;
   fill: #666666;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 21px;
+  }
 }
 
 .academy__link:hover .academy__logo path {
