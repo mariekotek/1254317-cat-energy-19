@@ -3,14 +3,36 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
 
+.form-comment__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+}
+
 .form-comment__title {
-  width: 240px;
+  width: 118px;
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
@@ -21,56 +43,48 @@
   color: #111111;
   margin-top: 30px;
   margin-bottom: 32px;
+  padding-right: 20px;
   text-transform: none;
+  position: relative;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     margin-top: 65px;
     margin-bottom: 70px;
     font-size: 36px;
     line-height: 1;
-    width: 100%;
+    width: 180px;
+    padding-left: 40px;
+    margin-left: 0;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
-.form-comment__title::after {
+.form-comment__wrapper::after {
   content: "";
-  width: 158px;
+  width: 50%;
   height: 3px;
   background-color: #68b738;
   position: absolute;
   top: 7%;
-  left: 51%;
+  right: 0;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    width: 477px;
+    width: 100%;
     top: 8%;
-    left: 35%;
+    left: 0;
+    right: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1120px;
-    top: 10%;
-    left: 18%;
-  }
-}
-
-.form-comment__title::before {
-  content: "";
-  width: 0;
-  background-color: #68b738;
-  position: absolute;
-
-  @media (min-width: @tablet-width) {
-    height: 3px;
-    width: 30px;
     top: 8%;
-    left: -11%;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 70px;
-    top: 10%;
-    left: -9%;
   }
 }
 
@@ -79,20 +93,30 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 1.13;
-  width: 100%;
   opacity: 0.5;
   border-color: #444444;
+  padding-top: 13px;
+  padding-left: 17px;
+  width: 260px;
+  height: 140px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 20px;
     line-height: 1.5;
-    width: 631px;
-    height: 174px;
+    width: 612px;
+    height: 160px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1218px;
-    height: 174px;
+    width: 1200px;
+    height: 160px;
+    margin-left: 10px;
+    margin-right: 0;
+    padding-left: 10px;
   }
 }
 
