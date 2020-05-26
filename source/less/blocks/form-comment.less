@@ -11,8 +11,23 @@
 }
 
 .form-comment__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+    padding-left: 30px;
+    padding-right: 40px;
   }
 }
 
@@ -41,14 +56,13 @@
     font-size: 36px;
     line-height: 1;
     width: 180px;
-
     padding-left: 40px;
-    margin-left: 30px;
+    margin-left: 0;
     padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 70px;
+    margin-left: 0;
   }
 }
 
@@ -89,8 +103,8 @@
   @media (min-width: @tablet-width) {
     padding-top: 10px;
     margin-top: 5px;
-    margin-left: 70px;
-    margin-right: 67px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 20px;
     line-height: 1.5;
     width: 612px;
@@ -100,7 +114,9 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
     height: 160px;
-    margin-left: 110px;
+    margin-left: 10px;
+    margin-right: 0;
+    padding-left: 10px;
   }
 }
 
