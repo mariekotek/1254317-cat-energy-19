@@ -202,17 +202,28 @@
   }
 }
 
-.example__button:hover {
-  border-bottom: 1px solid #cdcdcd;
+.example__button:hover,
+.example__button:focus {
+  border-bottom: 1px solid rgba(7, 7, 7, 0.4);
 }
 
-.example__button:hover + .example__range {
+.example__button:active {
+  border-bottom: none;
+}
+
+.example__range:hover {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
-.example__button:active + .example__range {
-  border: solid 2px #68b738;
+.example__range:active {
+  border: 2px solid #68b738;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  width: 32px;
+  height: 32px;
+}
+
+.example__range:active + .example__range::after {
+  left: 34%;
 }
 
 .example__range {
@@ -232,6 +243,7 @@
     z-index: 3;
     top: -8px;
     left: 20%;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
   }
 
   @media (min-width: @desktop-width) {
@@ -240,6 +252,8 @@
 }
 
 .example__button:last-of-type::before {
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     content: "";
     width: 428px;
@@ -292,6 +306,15 @@
 .example__label:focus + .example__range {
   box-shadow: rgba(0, 0, 0, 0.25);
   border: solid 2px #68b738;
+  top: -6px;
+
+  @media (min-width: @tablet-width) {
+    left: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .example__table {
